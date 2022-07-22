@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 
 import NewExpenses from "./components/Exp/NewExpenses";
+import UpdatedExp from "./components/Expenses/UpdatedExp";
 
 export default function App() {
   const expenses = [
@@ -27,7 +28,7 @@ export default function App() {
   ];
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
+      <UpdatedExp />
       <NewExpenses items={expenses} />
     </div>
   );
